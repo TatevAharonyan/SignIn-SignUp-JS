@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: inherit;
+    min-width: 357px ;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/background_img.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#h1 {
+    height: 10vh;
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: -webkit-pictograph;
+    font-weight:normal;
+    margin: 3vh auto;
+}
+
+#Forms_and_img{
+    width: 50%;
+    /* height: 70%; */
+    height: 83vh;
+    min-height: 540px;
+    margin: 1rem 0 2.1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms_and_button {
+    width: 50%;
+    height: 75.5vh;
+    max-height: 540px;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    padding: 0 0 .2rem 0;
+    background-color: rgba(76, 68, 68, 0.158);
+    border-radius: 3px;
+}
+
+#img  {
+    width: 50%;
+    max-height: 540px;
+    height: 75.5vh;
+    margin-bottom: 1rem;
+    /* display: flex; */
+}
+
+#singIn_singUp_button {
+    width: 100%;
+    height: 2.7rem;
+    display: flex;
+}
+
+#ButtonInput, #ButtonRegister {
+    width: 50%;
+    height: 56px ;
+    border: none;
+    background-color: transparent;  
+    border-radius: 0;
+}
+
+#ButtonInput{
+    color:#101316; 
+}
+
+#ButtonRegister {
+    background-color: #0c1b25; 
+    opacity: 0.8;
+}
+
+ .button_text_style {
+    color:white;
+    font-size: 20px;
+    font-family: fangsong; 
+}
+
+#forms {
+    padding: 1vmax 1.5vmax  1vmax 1.5vmax;
+    width: 100%;
+    height:400px;
+}
+
+p {
+    margin: 1vh 0 .5vh 0;
+    color:white;
+    font-family: Arial;
+    font-size: 12px; 
+}
+
+input {
+    width:100%;
+    height: 25px;
+    color: rgba(165, 164, 165, 0.726);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.719);    
+}
+
+input:focus, button:focus{ 
+  outline: none;
+}
+
+#checkbox {
+    width: auto;
+    height: auto;
+}
+
+#checkboxText_buttn {
+    margin: 3px;
+}
+
+.checkboxText {
+    margin-top: 3px;
+}
+
+#signIn_signUp{
+    margin-top: 1.6vh;
+    width: 100%;
+    height:3em;
+    color: white;
+    background-color: transparent;
+    border:2px solid white;
+}
+
+
+.signIn_signUp:focus{
+    outline-color:transparent;
+}
+
+.signIn_signUp:active {
+    border:3px solid rgb(8, 80, 90);
+}
+
+#span, #spanEm, #spanP, #spanN { 
+ 
+    font-size: 11px;
+    font-family: Arial;
+    color: rgb(241, 113, 113);
+    margin: 0;
+    padding: 0;
+} 
+
+@media  (max-width: 1600px ){
+    #Forms_and_img  {
+        width: 70%;
+        height: 80vh;
+    }
+
+}
+
+@media   ( max-width: 1000px ){
+    
+    #img {
+        display: none;
+    }
+    #Forms_and_img  {
+        width: 60%;
+        height: 875vh;
+    }
+    #forms_and_button {
+        width:80%;
+        height: 75vh;
+    }
+}
+
+@media   ( max-width: 800px ){
+    
+    #Forms_and_img  {
+        width: 75%;
+        height: 875vh;
+    }
+    #forms_and_button {
+        width:80%;
+        height: 75vh;
+    }
+}
+@media   ( max-width: 570px ){
+    #Forms_and_img {
+        width: 100%;
+        height: 600px;
+        /* height: 420px; */
+
+    }
+    #forms_and_button {
+        width: 70%;
+        height: 450px;
+
+    }
+
+}
+
+@media (max-height: 540px){
+    #forms_and_button, #img, #Forms_and_img {
+        height: 410px;
+
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <title> SIGN IN & SIGN UP FORMS</title>
+</head>
+    <body >
+        <div id="container">
+            <div id = "h1">
+                <h1>CREATIVE SIGN IN & SIGN UP FORMS</h1>
+            </div>
+           
+            <div id="Forms_and_img">
+                <div id="forms_and_button" >
+
+                    <div id="singIn_singUp_button">
+                        <input type="button"  class="button_text_style" id= "ButtonInput" onclick="clickButton(event);"  value="Sing In" >
+                        <input type="button" class="button_text_style" id="ButtonRegister" onclick="clickButton(event);" value="Sing Up">
+                        
+                    </div> 
+                     <form  method="POST" id="forms" name="forms" onsubmit="return validateForm()">
+                        <div id="form_sing_in">
+                            <p>User Name</p>
+                            <input class="inp" id = "name" name="name" type="text"    >
+                            <span id="spanN"></span>
+                            <p>Password</p>
+                            <input class="inp"  id="password" name="password" type="password" >  
+                            <span id="spanP" ></span>   
+                        
+                        </div>
+                        <div class="checkboxText_buttn">
+                            <p class="checkboxText">
+                                <input type="checkbox"  id="checkbox" value="Remember my?" onclick = "saveUser()"  >Remember my?</p>
+                                <button class="signIn_signUp" name="SIGN IN" id="signIn_signUp" type="submit"  >SIGN IN</button> 
+                        </div>
+                        
+
+                    </form>
+                
+                </div>
+
+                <div id="img">
+                    <img src="img/image.jpg" alt="img" width="100%" height="100%">
+                </div>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+        
+
+    </body>
+</html>
